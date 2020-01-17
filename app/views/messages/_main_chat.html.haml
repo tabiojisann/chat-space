@@ -5,8 +5,9 @@
    .group-list
     member: masa
   .edit
-   %a{:href => "#"}
+   = link_to "#" do
     Edit
+  
   
 
  .messages
@@ -43,10 +44,3 @@
      = icon('fas', 'image')
      %input{type: "file", class: "input-box__image__file"}
    %input.submit-btn{:name => "commit", :type => "submit", :value => "Send"}
-
- 
-
-  
-
- 
- 
