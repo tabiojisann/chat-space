@@ -1,0 +1,46 @@
+.main-chat
+ .main-header
+  .current-group
+   TEST
+   .group-list
+    member: masa
+  .edit
+   = link_to "#" do
+    Edit
+  
+  
+
+ .messages
+  .message-type
+   .message-name
+    masa
+   .message-date
+    2020/1/16(木) 17:32:02
+  .message-comment 
+   コメント１
+
+  .message-type
+   .message-name
+    masa
+   .message-date
+    2020/1/16(木) 17:32:02
+  .message-comment 
+   コメント２
+
+  .message-type
+   .message-name
+    masa
+   .message-date
+    2020/1/16(木) 17:32:02
+  .message-comment 
+   コメント３
+
+
+ .form 
+  %form.new-message
+   .input-box
+    %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+    %label{class: "input-box__image"}
+     = icon('fas', 'image')
+     %input{type: "file", class: "input-box__image__file"}
+   %input.submit-btn{:name => "commit", :type => "submit", :value => "Send"}
