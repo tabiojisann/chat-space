@@ -191,9 +191,8 @@
       }
     } 
   }
-}
-
-.submit-btn {
+  
+  .submit {
   height: 50px;
   width: 100px;
   background-color: #38aef0;
@@ -203,4 +202,17 @@
   margin-right: 40px;
   margin-top: 20px;
   cursor: pointer;
+ }
 }
+
+// .submit {
+//   height: 50px;
+//   width: 100px;
+//   background-color: #38aef0;
+//   color: #ffffff;
+//   text-align: center;
+//   line-height: 50px;
+//   margin-right: 40px;
+//   margin-top: 20px;
+//   cursor: pointer;
+// }
