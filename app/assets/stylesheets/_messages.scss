@@ -129,6 +129,9 @@
   text-align: center;
   line-height: 40px;
   cursor: pointer;
+  &__btn {
+    color: #38aef0;
+  }
 }
 
 .message-type {
