@@ -134,6 +134,10 @@
   }
 }
 
+.messages{
+  overflow: scroll;
+}
+
 .message-type {
   padding-top: 35px;
   display: flex;
