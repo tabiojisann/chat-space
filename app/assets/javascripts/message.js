@@ -120,7 +120,6 @@ $(function(){
  })
   var reloadMessages = function() {
     last_message_id = $('.message:last').data("message-id");
-    console.log(last_message_id);
 
     $.ajax({ 
       url: 'api/messages',
@@ -136,12 +135,11 @@ $(function(){
       });
       $('.messages').append(insertHTML);
       $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
-      // $('.messages')[0].reset();
-      // $(".form__submit").prop("disabled", false);
+    
      }
     })
     .fail(function() {
-      console.log('error');
+      alert('error');
     });
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
