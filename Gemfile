@@ -41,11 +41,13 @@ group :development, :test do
 
   # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
 gem 'capistrano'
 gem 'capistrano-rbenv'
 gem 'capistrano-bundler'
 gem 'capistrano-rails'
 gem 'capistrano3-unicorn'
+
 gem 'rspec-rails', '~> 3.5'
 gem 'rails-controller-testing'
 gem 'factory_bot_rails'
@@ -72,3 +74,4 @@ gem 'devise'
 gem 'pry-rails'
 gem 'carrierwave'
 gem 'mini_magick'
+
