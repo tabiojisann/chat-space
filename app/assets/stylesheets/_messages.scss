@@ -85,6 +85,8 @@
    height: calc(100% - 190px);
    width: 100%;
    background-color: #fafafa;
+   overflow: scroll;
+   padding: 46px 40px;
  }
 
 
@@ -134,35 +136,35 @@
   }
 }
 
-.messages{
-  overflow: scroll;
+
+
+.message {
+  padding-bottom: 40px
 }
 
-.message-type {
-  padding-top: 35px;
+.upper-message {
   display: flex;
+  margin-bottom: 10px;
+
+  &__user-name {
+    color: #434a54;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__date {
+    color: #999999;
+    font-size: 12px;
+    margin-left: 10px;
+  }
 }
 
-.message-name{
-  color: #333333;
-  font-size: 16px;
-  padding-left: 40px;
-  font-weight: bold;
-}
-
-.message-date {
-  color: #999999;
-  font-size: 12px;
-  padding-left: 5px;
-}
-
-.message-comment {
+.lower-message {
   color: #434a54;
   font-size: 14px;
-  padding-top: 14px;
-  padding-left: 40px;
-  padding-bottom: 9px;
+  margin-bottom: 10px;
 }
+
+
 
 .form {
   height: 90px;
